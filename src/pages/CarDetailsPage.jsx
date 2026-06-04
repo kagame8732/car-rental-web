@@ -21,11 +21,11 @@ export function CarDetailsPage({ slug }) {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
           <div>
             <img
-              className="h-[300px] w-full rounded-lg object-cover shadow-premium sm:h-[520px]"
+              className="h-[260px] w-full rounded-lg object-cover shadow-premium sm:h-[420px] lg:h-[520px]"
               src={mainImage}
               alt={`${vehicle.name} gallery`}
             />
-            <div className="mt-4 grid grid-cols-3 gap-3">
+            <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
               {vehicle.gallery.map((image) => (
                 <button
                   key={image}
@@ -33,7 +33,7 @@ export function CarDetailsPage({ slug }) {
                   className="overflow-hidden rounded border border-slate-200"
                 >
                   <img
-                    className="h-24 w-full object-cover sm:h-32"
+                    className="h-20 w-full object-cover sm:h-32"
                     src={image}
                     alt={`${vehicle.name} thumbnail`}
                   />
@@ -41,8 +41,8 @@ export function CarDetailsPage({ slug }) {
               ))}
             </div>
           </div>
-          <aside className="rounded-lg border border-slate-200 bg-slate-50 p-6">
-            <h2 className="text-2xl font-semibold text-ink">
+          <aside className="rounded-lg border border-slate-200 bg-slate-50 p-4 sm:p-6">
+            <h2 className="text-xl font-semibold text-ink sm:text-2xl">
               Vehicle specifications
             </h2>
             <div className="mt-5 grid gap-3">
@@ -85,7 +85,7 @@ export function CarDetailsPage({ slug }) {
               <li>Chauffeur service available on request.</li>
             </ul>
             <a
-              className="btn mt-7 w-full justify-center bg-gold text-ink hover:bg-[#d9b65d]"
+              className="btn mt-7 w-full justify-center bg-gold text-white hover:bg-[#479737]"
               href={`${whatsappUrl}%20Vehicle:%20${encodeURIComponent(vehicle.name)}`}
               target="_blank"
               rel="noreferrer"

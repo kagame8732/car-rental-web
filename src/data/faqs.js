@@ -8,6 +8,10 @@ export const faqs = [
     "Yes. Chauffeur service is available for airport transfers, business travel, and upcountry trips.",
   ],
   [
+    "Can Amanilink help me find accommodation?",
+    "Yes. We can connect you with Airbnb-style stays, furnished and unfurnished apartments, short-term rentals, long-term rentals, and holiday homes.",
+  ],
+  [
     "Do you deliver cars in Kigali?",
     "Yes. We can deliver to Kigali International Airport, hotels, offices, and homes within Kigali.",
   ],

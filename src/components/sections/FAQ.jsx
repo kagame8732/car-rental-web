@@ -8,7 +8,7 @@ export function FAQ() {
 
   return (
     <section className="section bg-slate-50">
-      <SectionTitle eyebrow="FAQ" title="Rental questions, answered" />
+      <SectionTitle eyebrow="FAQ" title="Travel questions, answered" />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         {faqs.map(([q, a], index) => (
           <div key={q} className="border-b border-slate-200 py-4">

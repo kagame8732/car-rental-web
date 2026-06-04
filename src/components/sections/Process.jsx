@@ -6,26 +6,26 @@ export function Process() {
     <section className="section bg-ink text-white">
       <SectionTitle
         light
-        eyebrow="Rental Process"
-        title="Reserve in three simple steps"
-        text="No accounts, no online payment flow. Just choose your car and contact our team to confirm availability."
+        eyebrow="Booking Process"
+        title="Book in three simple steps"
+        text="Choose the service you need, contact our team, and we confirm the details for your ride or accommodation."
       />
       <div className="mx-auto grid max-w-6xl gap-5 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
         {[
           [
             "01",
-            "Choose your vehicle",
-            "Browse the fleet and select the car that fits your route, comfort needs, and budget.",
+            "Choose your service",
+            "Select self-drive, chauffeur hire, airport transfer, business transport, event travel, or accommodation.",
           ],
           [
             "02",
             "Contact our team",
-            "Message us on WhatsApp, call, or send the form with your dates and pickup location.",
+            "Message us on WhatsApp, call, or send the form with your dates, pickup point, route, and preferences.",
           ],
           [
             "03",
-            "Confirm and drive",
-            "We confirm documents, delivery, rental terms, and hand over a clean, ready vehicle.",
+            "Confirm and move",
+            "We confirm availability, terms, and timing so your journey or stay is ready when you need it.",
           ],
         ].map(([num, title, text]) => (
           <div

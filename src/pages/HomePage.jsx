@@ -17,26 +17,27 @@ export function HomePage() {
 
   return (
     <>
-      <section className="relative min-h-[720px] overflow-hidden bg-ink text-white">
+      <section className="relative min-h-[620px] overflow-hidden bg-ink text-white sm:min-h-[680px] lg:min-h-[720px]">
         <img
-          src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=2200&q=85"
-          alt="Premium SUV on a scenic road"
-          className="absolute inset-0 h-full w-full object-cover opacity-45"
+          src="/assets/about.jpeg"
+          alt="Amanilink travel and vehicle rental brochure"
+          className="animate-fade-in absolute inset-0 h-full w-full object-cover object-left opacity-30 sm:object-center sm:opacity-35"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/78 to-ink/20" />
-        <div className="relative mx-auto flex min-h-[720px] max-w-7xl items-center px-4 pb-24 pt-16 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/95 via-ink/82 to-ink/40 sm:bg-gradient-to-r sm:from-ink sm:via-ink/78 sm:to-ink/20" />
+        <div className="relative mx-auto flex min-h-[620px] max-w-7xl items-center px-4 pb-16 pt-14 sm:min-h-[680px] sm:px-6 sm:pb-24 lg:min-h-[720px] lg:px-8">
           <div className="max-w-3xl">
-            <p className="mb-5 inline-flex rounded bg-white/10 px-4 py-2 text-sm font-medium text-gold ring-1 ring-white/15">
-              Trusted car rentals in Kigali and across Rwanda
+            <p className="animate-fade-up mb-4 inline-flex max-w-full rounded bg-white/10 px-3 py-2 text-xs font-medium text-gold ring-1 ring-white/15 sm:mb-5 sm:px-4 sm:text-sm">
+              Amanilink - your link to safe travel
             </p>
-            <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
-              Reliable premium cars for every Rwanda journey.
+            <h1 className="animate-fade-up animate-delay-1 text-4xl font-semibold leading-tight tracking-tight sm:text-6xl sm:leading-tight lg:text-7xl">
+              Need a vehicle? We have got you covered.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/76">
-              Choose clean, well-maintained vehicles for airport transfers,
-              business trips, family travel, and national park adventures.
+            <p className="animate-fade-up animate-delay-2 mt-5 max-w-2xl text-base leading-7 text-white/76 sm:mt-6 sm:text-lg sm:leading-8">
+              Safe, reliable, anytime, anywhere. Book self-drive cars,
+              chauffeur-driven rides, airport transfers, corporate transport,
+              and comfortable stays through one trusted team.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="animate-fade-up animate-delay-3 mt-8 flex flex-col gap-3 sm:flex-row">
               <LinkButton to="/fleet">
                 View Fleet <ArrowRight size={18} />
               </LinkButton>
@@ -46,7 +47,7 @@ export function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Reserve on WhatsApp
+                Book on WhatsApp
               </a>
             </div>
           </div>
@@ -57,7 +58,7 @@ export function HomePage() {
         <SectionTitle
           eyebrow="Featured Cars"
           title="Popular vehicles ready for hire"
-          text="A curated selection of sedans and SUVs suited for Kigali streets, countryside routes, and executive travel."
+          text="Clean, regularly serviced sedans and SUVs suited for Kigali streets, airport pickups, countryside routes, and executive travel."
         />
         <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3 lg:px-8">
           {featured.map((vehicle) => (

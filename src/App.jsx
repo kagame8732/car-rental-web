@@ -25,8 +25,8 @@ export function App() {
 
   useEffect(() => {
     document.title = path.startsWith("/cars/")
-      ? `${vehicles.find((vehicle) => vehicle.slug === path.split("/").pop())?.name || "Vehicle"} | Cars in Rwanda`
-      : "Cars in Rwanda | Premium Car Rental in Kigali";
+      ? `${vehicles.find((vehicle) => vehicle.slug === path.split("/").pop())?.name || "Vehicle"} | Amanilink`
+      : "Amanilink | Safe Travel, Car Rental, and Stays";
   }, [path]);
 
   return (
@@ -35,7 +35,7 @@ export function App() {
       {page}
       <Footer />
       <a
-        className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-gold text-ink shadow-premium transition hover:scale-105"
+        className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-gold text-white shadow-premium transition hover:scale-105"
         href={whatsappUrl}
         target="_blank"
         rel="noreferrer"

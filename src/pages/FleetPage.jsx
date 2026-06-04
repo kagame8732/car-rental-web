@@ -9,8 +9,8 @@ export function FleetPage() {
     <main>
       <PageHero
         eyebrow="Fleet"
-        title="Available rental vehicles"
-        text="Compare our sedans, SUVs, executive cars, and 4x4 options for travel across Rwanda."
+        title="Available Amanilink rental vehicles"
+        text="Compare sedans, SUVs, executive cars, and 4x4 options for self-drive, chauffeur hire, business travel, and airport transfers."
       />
       <section className="section bg-white">
         <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3 lg:px-8">

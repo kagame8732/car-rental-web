@@ -10,7 +10,7 @@ export function LinkButton({
   const styles =
     variant === "secondary"
       ? "border border-white/20 bg-white/10 text-white hover:bg-white/15"
-      : "bg-gold text-ink hover:bg-[#d9b65d]";
+      : "bg-gold text-white hover:bg-[#479737]";
 
   return (
     <button

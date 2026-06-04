@@ -1,6 +1,6 @@
 import React from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { address, email, phone } from "../../data/contact";
+import { address, displayPhone, email, phone } from "../../data/contact";
 import { ContactForm } from "../forms/ContactForm";
 
 export function ContactPreview() {
@@ -12,15 +12,16 @@ export function ContactPreview() {
             Contact
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">
-            Ready to reserve a vehicle?
+            Ready to book your ride or stay?
           </h2>
           <p className="mt-4 leading-7 text-slate-600">
-            Tell us your travel dates, route, and preferred vehicle. Our team
-            will respond with availability and next steps.
+            Tell us your travel dates, route, preferred vehicle, or
+            accommodation needs. Our team will respond with availability and
+            next steps.
           </p>
-          <div className="mt-6 grid gap-3 text-slate-700">
+          <div className="mt-6 grid gap-3 break-words text-slate-700">
             <a className="contact-line" href={`tel:${phone}`}>
-              <Phone size={18} /> {phone}
+              <Phone size={18} /> {displayPhone}
             </a>
             <a className="contact-line" href={`mailto:${email}`}>
               <Mail size={18} /> {email}
