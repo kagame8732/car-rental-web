@@ -19,7 +19,7 @@ export function HomePage() {
     <>
       <section className="relative min-h-[620px] overflow-hidden bg-ink text-white sm:min-h-[680px] lg:min-h-[720px]">
         <img
-          src="/assets/about.jpeg"
+          src="/assets/about.png"
           alt="Amanilink travel and vehicle rental brochure"
           className="animate-fade-in absolute inset-0 h-full w-full object-cover object-left opacity-30 sm:object-center sm:opacity-35"
         />

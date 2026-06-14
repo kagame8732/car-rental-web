@@ -1,166 +1,142 @@
+import coasterInside1 from "./images/Cars/Coaster/insidecoaster1.jpg";
+import coasterOut1 from "./images/Cars/Coaster/outcoaster1.jpg";
+import coasterOut2 from "./images/Cars/Coaster/outcoaster2.jpg";
+import sonataInside1 from "./images/Cars/Huyandai Sonata/insidehyund1.jpg";
+import sonataInside2 from "./images/Cars/Huyandai Sonata/insidehyund2.jpg";
+import sonataOut1 from "./images/Cars/Huyandai Sonata/outhyund1.jpg";
+import sonataOut2 from "./images/Cars/Huyandai Sonata/outhyund2.jpg";
+import camryInside1 from "./images/Cars/Toyota Camri/insidecamr1.jpg";
+import camryInside2 from "./images/Cars/Toyota Camri/insidecamr2.jpg";
+import camryInside3 from "./images/Cars/Toyota Camri/insidecamr3.jpg";
+import camryOut1 from "./images/Cars/Toyota Camri/outcamr1.jpg";
+import camryOut2 from "./images/Cars/Toyota Camri/outcamr2.jpg";
+import hiluxOut1 from "./images/Cars/Toyota Hilix/outhilix1.jpg";
+import hiluxOut2 from "./images/Cars/Toyota Hilix/outhilix2.jpg";
+import landCruiserInside1 from "./images/Cars/Toyota landcruiser/insidelandcru1.jpg";
+import landCruiserOut1 from "./images/Cars/Toyota landcruiser/outlandcru1.jpg";
+import landCruiserOut2 from "./images/Cars/Toyota landcruiser/outlandcru2.jpg";
+import landCruiserOut3 from "./images/Cars/Toyota landcruiser/outlandcru3.jpg";
+import landCruiserOut4 from "./images/Cars/Toyota landcruiser/outlandcru4.jpg";
+import priusInside1 from "./images/Cars/toyota prius/insideprius1.jpg";
+import priusOut1 from "./images/Cars/toyota prius/outprius1.jpg";
+import priusOut2 from "./images/Cars/toyota prius/outprius2.jpg";
+
 export const vehicles = [
   {
-    slug: "toyota-corolla",
-    name: "Toyota Corolla",
-    year: 2022,
+    slug: "toyota-prius",
+    name: "Toyota Prius",
+    year: 2021,
     transmission: "Automatic",
-    fuel: "Petrol",
+    fuel: "Hybrid",
     seats: 5,
-    price: 45,
-    type: "Compact Sedan",
-    image:
-      "https://images.unsplash.com/photo-1623013438264-d9b2f0e35f5b?auto=format&fit=crop&w=1200&q=82",
-    gallery: [
-      "https://images.unsplash.com/photo-1623013438264-d9b2f0e35f5b?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1400&q=82",
-    ],
+    price: 45000,
+    type: "Hybrid Sedan",
+    image: priusOut1,
+    gallery: [priusOut1, priusOut2, priusInside1],
     features: [
-      "Fuel efficient",
-      "Bluetooth audio",
+      "Fuel efficient hybrid",
+      "Automatic transmission",
+      "Comfortable city driving",
       "Air conditioning",
-      "Reverse camera",
     ],
   },
   {
-    slug: "toyota-prado",
-    name: "Toyota Prado",
-    year: 2021,
-    transmission: "Automatic",
-    fuel: "Diesel",
-    seats: 7,
-    price: 120,
-    type: "Luxury 4x4 SUV",
-    featured: true,
-    image:
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=82",
-    gallery: [
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=82",
-    ],
-    features: [
-      "4x4 drive",
-      "Seven seats",
-      "Leather interior",
-      "Ideal for national parks",
-    ],
-  },
-  {
-    slug: "toyota-rav4",
-    name: "Toyota RAV4",
-    year: 2022,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    seats: 5,
-    price: 75,
-    type: "Crossover SUV",
-    featured: true,
-    image:
-      "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=82",
-    gallery: [
-      "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1511527844068-006b95d162c2?auto=format&fit=crop&w=1400&q=82",
-    ],
-    features: [
-      "High ground clearance",
-      "Apple CarPlay",
-      "Cruise control",
-      "Spacious luggage area",
-    ],
-  },
-  {
-    slug: "hyundai-tucson",
-    name: "Hyundai Tucson",
+    slug: "hyundai-sonata",
+    name: "Hyundai Sonata",
     year: 2021,
     transmission: "Automatic",
     fuel: "Petrol",
     seats: 5,
-    price: 70,
-    type: "Modern SUV",
-    image:
-      "https://images.unsplash.com/photo-1606220838315-056192d5e927?auto=format&fit=crop&w=1200&q=82",
-    gallery: [
-      "https://images.unsplash.com/photo-1606220838315-056192d5e927?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=82",
-    ],
-    features: [
-      "Comfort seats",
-      "Smart safety",
-      "USB charging",
-      "Excellent city handling",
-    ],
-  },
-  {
-    slug: "kia-sportage",
-    name: "Kia Sportage",
-    year: 2020,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    seats: 5,
-    price: 68,
-    type: "Family SUV",
-    featured: true,
-    image:
-      "https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&w=1200&q=82",
-    gallery: [
-      "https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1400&q=82",
-    ],
-    features: [
-      "Panoramic roof",
-      "Parking sensors",
-      "Tinted windows",
-      "Smooth highway comfort",
-    ],
-  },
-  {
-    slug: "mercedes-benz-c-class",
-    name: "Mercedes-Benz C-Class",
-    year: 2021,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    seats: 5,
-    price: 140,
+    price: 45000,
     type: "Executive Sedan",
-    image:
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=82",
-    gallery: [
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1400&q=82",
-    ],
+    featured: true,
+    image: sonataOut1,
+    gallery: [sonataOut1, sonataOut2, sonataInside1, sonataInside2],
     features: [
-      "Executive comfort",
-      "Premium sound",
-      "Leather seats",
+      "Spacious cabin",
+      "Smooth highway comfort",
+      "Bluetooth audio",
+      "Business travel ready",
+    ],
+  },
+  {
+    slug: "toyota-camry",
+    name: "Toyota Camry",
+    year: 2021,
+    transmission: "Automatic",
+    fuel: "Petrol",
+    seats: 5,
+    price: 65000,
+    type: "Premium Sedan",
+    featured: true,
+    image: camryOut1,
+    gallery: [camryOut1, camryOut2, camryInside1, camryInside2, camryInside3],
+    features: [
+      "Premium comfort",
+      "Large luggage space",
+      "Quiet interior",
       "Airport transfer ready",
     ],
   },
   {
-    slug: "bmw-x5",
-    name: "BMW X5",
-    year: 2022,
-    transmission: "Automatic",
+    slug: "toyota-hilux",
+    name: "Toyota Hilux",
+    year: 2021,
+    transmission: "Manual",
     fuel: "Diesel",
     seats: 5,
-    price: 180,
-    type: "Premium SUV",
-    image:
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=82",
+    price: 100000,
+    type: "Pickup 4x4",
+    image: hiluxOut1,
+    gallery: [hiluxOut1, hiluxOut2],
+    features: [
+      "Strong pickup body",
+      "High ground clearance",
+      "Diesel efficiency",
+      "Ideal for rugged routes",
+    ],
+  },
+  {
+    slug: "toyota-land-cruiser",
+    name: "Toyota Land Cruiser",
+    year: 2021,
+    transmission: "Automatic",
+    fuel: "Diesel",
+    seats: 7,
+    price: 130000,
+    type: "Luxury 4x4 SUV",
+    featured: true,
+    image: landCruiserOut1,
     gallery: [
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=1400&q=82",
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1400&q=82",
+      landCruiserOut1,
+      landCruiserOut2,
+      landCruiserOut3,
+      landCruiserOut4,
+      landCruiserInside1,
     ],
     features: [
-      "Luxury cabin",
-      "All-wheel drive",
-      "Driver assistance",
-      "VIP travel ready",
+      "4x4 drive",
+      "Seven seats",
+      "Premium interior",
+      "Ideal for long-distance trips",
+    ],
+  },
+  {
+    slug: "toyota-coaster",
+    name: "Toyota Coaster",
+    year: 2020,
+    transmission: "Manual",
+    fuel: "Diesel",
+    seats: 29,
+    price: 180000,
+    type: "Group Bus",
+    image: coasterOut1,
+    gallery: [coasterOut1, coasterOut2, coasterInside1],
+    features: [
+      "Group transport",
+      "Large passenger capacity",
+      "Comfortable seating",
+      "Event and tour ready",
     ],
   },
 ];

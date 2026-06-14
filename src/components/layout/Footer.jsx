@@ -28,8 +28,8 @@ export function Footer() {
         <div>
           <h3 className="font-semibold text-gold">Contact</h3>
           <div className="mt-4 grid gap-2 text-sm text-white/70">
-            <a href={`tel:${phone}`}>{displayPhone}</a>
-            <a href={`mailto:${email}`}>{email}</a>
+            <a href={`tel:Rwf{phone}`}>{displayPhone}</a>
+            <a href={`mailto:Rwf{email}`}>{email}</a>
             <span>{address}</span>
           </div>
         </div>

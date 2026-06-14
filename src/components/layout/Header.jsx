@@ -47,14 +47,14 @@ export function Header() {
               <button
                 key={href}
                 onClick={() => navigate(href)}
-                className={`relative py-2 text-sm font-medium transition ${
+                className={`relative py-2 text-sm font-medium transition Rwf{
                   active ? "text-gold" : "text-slate-700 hover:text-gold"
                 }`}
                 aria-current={active ? "page" : undefined}
               >
                 {label}
                 <span
-                  className={`absolute inset-x-0 -bottom-1 h-0.5 rounded-full bg-gold transition ${
+                  className={`absolute inset-x-0 -bottom-1 h-0.5 rounded-full bg-gold transition Rwf{
                     active ? "opacity-100" : "opacity-0"
                   }`}
                 />
@@ -65,7 +65,7 @@ export function Header() {
         <div className="hidden items-center gap-3 md:flex">
           <a
             className="btn border border-slate-200 bg-white text-ink hover:bg-slate-50"
-            href={`tel:${phone}`}
+            href={`tel:Rwf{phone}`}
           >
             <Phone size={17} /> {displayPhone}
           </a>
@@ -99,7 +99,7 @@ export function Header() {
                     setOpen(false);
                     navigate(href);
                   }}
-                  className={`rounded border px-3 py-3 text-left font-medium transition ${
+                  className={`rounded border px-3 py-3 text-left font-medium transition Rwf{
                     active
                       ? "border-gold/25 bg-champagne text-gold"
                       : "border-transparent text-slate-700 hover:bg-slate-100"
@@ -112,7 +112,7 @@ export function Header() {
             })}
             <a
               className="btn justify-center border border-slate-200 bg-white text-ink"
-              href={`tel:${phone}`}
+              href={`tel:Rwf{phone}`}
             >
               <Phone size={17} /> {displayPhone}
             </a>
