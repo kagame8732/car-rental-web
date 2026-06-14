@@ -15,7 +15,7 @@ export function CarDetailsPage({ slug }) {
       <PageHero
         eyebrow={vehicle.type}
         title={vehicle.name}
-        text={`${vehicle.year} ${vehicle.transmission} ${vehicle.fuel} rental car in Rwanda from $${vehicle.price} per day.`}
+        text={`Rwf{vehicle.year} Rwf{vehicle.transmission} Rwf{vehicle.fuel} rental car in Rwanda from RwfRwf{vehicle.price} per day.`}
       />
       <section className="section bg-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
@@ -23,7 +23,7 @@ export function CarDetailsPage({ slug }) {
             <img
               className="h-[260px] w-full rounded-lg object-cover shadow-premium sm:h-[420px] lg:h-[520px]"
               src={mainImage}
-              alt={`${vehicle.name} gallery`}
+              alt={`Rwf{vehicle.name} gallery`}
             />
             <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
               {vehicle.gallery.map((image) => (
@@ -35,7 +35,7 @@ export function CarDetailsPage({ slug }) {
                   <img
                     className="h-20 w-full object-cover sm:h-32"
                     src={image}
-                    alt={`${vehicle.name} thumbnail`}
+                    alt={`Rwf{vehicle.name} thumbnail`}
                   />
                 </button>
               ))}
@@ -51,7 +51,7 @@ export function CarDetailsPage({ slug }) {
                 ["Transmission", vehicle.transmission],
                 ["Fuel type", vehicle.fuel],
                 ["Seats", vehicle.seats],
-                ["Daily price", `$${vehicle.price}`],
+                ["Daily price", `RwfRwf{vehicle.price}`],
               ].map(([label, value]) => (
                 <div
                   key={label}
@@ -86,7 +86,7 @@ export function CarDetailsPage({ slug }) {
             </ul>
             <a
               className="btn mt-7 w-full justify-center bg-gold text-white hover:bg-[#479737]"
-              href={`${whatsappUrl}%20Vehicle:%20${encodeURIComponent(vehicle.name)}`}
+              href={`Rwf{whatsappUrl}%20Vehicle:%20Rwf{encodeURIComponent(vehicle.name)}`}
               target="_blank"
               rel="noreferrer"
             >

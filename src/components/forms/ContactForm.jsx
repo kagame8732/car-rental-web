@@ -25,11 +25,11 @@ export function ContactForm() {
       nextErrors.name = "Enter your full name.";
     }
 
-    if (!/^\+?\d[\d\s-]{6,}$/.test(values.phone)) {
+    if (!/^\+?\d[\d\s-]{6,}Rwf/.test(values.phone)) {
       nextErrors.phone = "Enter a valid phone number.";
     }
 
-    if (values.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) {
+    if (values.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+Rwf/.test(values.email)) {
       nextErrors.email = "Enter a valid email address.";
     }
 
@@ -63,17 +63,17 @@ export function ContactForm() {
     const message = [
       "Hello Amanilink, I would like to book:",
       "",
-      `Name: ${values.name}`,
-      `Phone: ${values.phone}`,
-      `Email: ${values.email || "Not provided"}`,
-      `Service: ${values.service}`,
-      `Vehicle: ${values.vehicle || "Not selected"}`,
-      `Start date: ${values.startDate}`,
-      `End date: ${values.endDate}`,
-      `Message: ${values.message}`,
+      `Name: Rwf{values.name}`,
+      `Phone: Rwf{values.phone}`,
+      `Email: Rwf{values.email || "Not provided"}`,
+      `Service: Rwf{values.service}`,
+      `Vehicle: Rwf{values.vehicle || "Not selected"}`,
+      `Start date: Rwf{values.startDate}`,
+      `End date: Rwf{values.endDate}`,
+      `Message: Rwf{values.message}`,
     ].join("\n");
 
-    const url = `https://wa.me/${phone.replace(/\D/g, "")}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/Rwf{phone.replace(/\D/g, "")}?text=Rwf{encodeURIComponent(message)}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
