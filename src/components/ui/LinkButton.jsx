@@ -15,7 +15,7 @@ export function LinkButton({
   return (
     <button
       onClick={() => navigate(to)}
-      className={`btn Rwf{styles} Rwf{className}`}
+      className={`btn ${styles} ${className}`}
     >
       {children}
     </button>

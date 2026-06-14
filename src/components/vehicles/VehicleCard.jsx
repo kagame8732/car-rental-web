@@ -7,13 +7,13 @@ export function VehicleCard({ vehicle }) {
   return (
     <article className="animate-fade-up overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-premium">
       <button
-        onClick={() => navigate(`/cars/Rwf{vehicle.slug}`)}
+        onClick={() => navigate(`/cars/${vehicle.slug}`)}
         className="block w-full text-left"
       >
         <img
           className="h-56 w-full object-cover"
           src={vehicle.image}
-          alt={`Rwf {vehicle.name} rental car in Rwanda`}
+          alt={`${vehicle.name} rental car in Rwanda`}
           loading="lazy"
         />
       </button>
@@ -46,14 +46,14 @@ export function VehicleCard({ vehicle }) {
         </div>
         <div className="mt-5 flex flex-col gap-3 min-[380px]:flex-row">
           <button
-            onClick={() => navigate(`/cars/Rwf{vehicle.slug}`)}
+            onClick={() => navigate(`/cars/${vehicle.slug}`)}
             className="btn flex-1 border border-slate-200 bg-white text-ink hover:bg-slate-50"
           >
             Details
           </button>
           <a
             className="btn flex-1 justify-center bg-ink text-white hover:bg-steel"
-            href={`Rwf{whatsappUrl}%20Vehicle:%20Rwf{encodeURIComponent(vehicle.name)}`}
+            href={`${whatsappUrl}%20Vehicle:%20${encodeURIComponent(vehicle.name)}`}
             target="_blank"
             rel="noreferrer"
           >

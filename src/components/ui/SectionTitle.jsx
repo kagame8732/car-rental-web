@@ -7,13 +7,13 @@ export function SectionTitle({ eyebrow, title, text, light = false }) {
         {eyebrow}
       </p>
       <h2
-        className={`mt-3 text-2xl font-semibold leading-tight tracking-tight sm:text-4xl Rwf{light ? "text-white" : "text-ink"}`}
+        className={`mt-3 text-2xl font-semibold leading-tight tracking-tight sm:text-4xl ${light ? "text-white" : "text-ink"}`}
       >
         {title}
       </h2>
       {text && (
         <p
-          className={`mt-4 text-base leading-7 Rwf{light ? "text-white/70" : "text-slate-600"}`}
+          className={`mt-4 text-base leading-7 ${light ? "text-white/70" : "text-slate-600"}`}
         >
           {text}
         </p>
