@@ -25,7 +25,7 @@ export function App() {
 
   useEffect(() => {
     document.title = path.startsWith("/cars/")
-      ? `Rwf{vehicles.find((vehicle) => vehicle.slug === path.split("/").pop())?.name || "Vehicle"} | Amanilink`
+      ? `${vehicles.find((vehicle) => vehicle.slug === path.split("/").pop())?.name || "Vehicle"} | Amanilink`
       : "Amanilink | Safe Travel, Car Rental, and Stays";
   }, [path]);
 

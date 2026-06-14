@@ -7,4 +7,4 @@ const whatsappText = encodeURIComponent(
   "Hello Amanilink, I would like to book a ride or accommodation.",
 );
 
-export const whatsappUrl = `https://wa.me/Rwf{phone.replace(/\D/g, "")}?text=Rwf{whatsappText}`;
+export const whatsappUrl = `https://wa.me/${phone.replace(/\D/g, "")}?text=${whatsappText}`;

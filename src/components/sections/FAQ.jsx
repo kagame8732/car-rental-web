@@ -18,7 +18,7 @@ export function FAQ() {
             >
               {q}
               <ChevronDown
-                className={`shrink-0 transition Rwf{active === index ? "rotate-180" : ""}`}
+                className={`shrink-0 transition ${active === index ? "rotate-180" : ""}`}
               />
             </button>
             {active === index && (

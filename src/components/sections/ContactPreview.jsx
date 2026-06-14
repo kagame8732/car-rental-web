@@ -20,10 +20,10 @@ export function ContactPreview() {
             next steps.
           </p>
           <div className="mt-6 grid gap-3 break-words text-slate-700">
-            <a className="contact-line" href={`tel:Rwf{phone}`}>
+            <a className="contact-line" href={`tel:${phone}`}>
               <Phone size={18} /> {displayPhone}
             </a>
-            <a className="contact-line" href={`mailto:Rwf{email}`}>
+            <a className="contact-line" href={`mailto:${email}`}>
               <Mail size={18} /> {email}
             </a>
             <span className="contact-line">
